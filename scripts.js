@@ -16,7 +16,7 @@ class Calculator {
     }
 
     appendNumber(number) {
-
+      this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
     chooseOperations(operations) {
