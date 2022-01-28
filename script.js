@@ -20,9 +20,9 @@ class Calculator {
       this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
-    chooseOperation(operations) {
-      if(this.currentOperand === '') return
-      if(this.previousOperand !== '') {
+    chooseOperation(operation) {
+      if (this.currentOperand === '') return
+      if (this.previousOperand !== '') {
         this.compute()
       }
       this.operation = operation
@@ -37,7 +37,7 @@ class Calculator {
 
     updateDisplay() {
       this.currentOperandTextElement.innerText = this.currentOperand
-      this.previousTextElement.innerText = this.previousOperand
+      this.previousOperandTextElement.innerText = this.previousOperand
     }
 }
 
@@ -72,3 +72,4 @@ equalsButton.addEventListener('click', button => {
   calculator.compute()
   calculator.updateDisplay()
 })
+
