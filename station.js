@@ -7,22 +7,18 @@
 
 
 // this is to create a function or to declare such one
-function myLogger() {
-    console.log(42)
+
+
+let countEl = document.getElementById('count-el')
+
+
+console.log(countEl)
+
+let count = 0 
+
+function increment () {
+    count = count + 1
+    countEl.innerText = count
 }
 
-myLogger()
-
-let lap1 = 34 
-let lap2 = 33
-let lap3 = 36
-
-
-function logLapTime() {
-    let totalTime = lap1 + lap2 + lap3
-    console.log(totalTime)
-}
-
-console.log(totalTime)
-
-logLapTime()
+increment()
